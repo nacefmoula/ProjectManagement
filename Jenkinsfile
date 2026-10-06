@@ -103,8 +103,8 @@ pipeline {
                 sh 'kubectl rollout restart deployment/frontend'
                 
                 // Attend que les nouveaux pods soient prêts avant de valider le stage
-                sh 'kubectl rollout status deployment/backend --timeout=90s'
-                sh 'kubectl rollout status deployment/frontend --timeout=90s'
+                sh 'kubectl rollout status deployment/backend --timeout=180s'
+                sh 'kubectl rollout status deployment/frontend --timeout=180s'
             }
         }
     } // <-- Fermeture obligatoire du bloc stages
