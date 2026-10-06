@@ -145,7 +145,7 @@ kubectl apply -f k8s/prometheus.yaml
 kubectl apply -f k8s/grafana.yaml
 ```
 
-#### 2. Cartographie des Accès & Ports Kubernetes
+#### 2. Cartographie des Accès & Ports Kubernetess
 
 | Service | Type | Port Cluster | NodePort Externe | URL d'Accès (Minikube IP : `192.168.49.2`) |
 |---|---|---|---|---|
